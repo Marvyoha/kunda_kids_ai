@@ -1,7 +1,6 @@
-// ignore_for_file: use_build_context_synchronously
-
 import 'package:flutter/material.dart';
-import 'package:kunda_kids_ai/hello_page.dart';
+
+import 'hello_page.dart';
 
 class LoadingPage extends StatefulWidget {
   const LoadingPage({Key? key}) : super(key: key);
@@ -19,7 +18,7 @@ class _LoadingPageState extends State<LoadingPage> {
 
   Future<void> navigateToNextScreen() async {
     await Future.delayed(
-        const Duration(milliseconds: 1500)); // Delay for 1 second
+        const Duration(milliseconds: 1500)); // Delay for 1.5 seconds
     Navigator.push(
       context,
       MaterialPageRoute(builder: (context) => const HelloPage()),
